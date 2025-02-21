@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Nombre Apellido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Animación para el modo oscuro */
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        .dark-mode .bg-primary {
+            background-color: #333;
+        }
+        .dark-mode .card {
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .dark-mode .btn-dark {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body class="transition-colors duration-300 bg-white dark:bg-gray-900" id="body">
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-20">
+        <div class="container mx-auto flex flex-col items-center">
+            <img src="https://via.placeholder.com/150" alt="Perfil" class="rounded-full w-40 h-40 mb-4">
+            <h1 class="text-4xl font-bold mb-2">Nombre Apellido</h1>
+            <p class="text-xl mb-4">Desarrollador Full Stack</p>
+            <button id="themeToggle" class="px-4 py-2 bg-gray-800 rounded-md text-white transition">Cambiar Modo</button>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Sobre Mí</h2>
+            <p class="text-lg max-w-3xl mx-auto">Soy un desarrollador apasionado por las tecnologías web. Me especializo en el desarrollo frontend y backend, trabajando con diversas herramientas y lenguajes para crear experiencias web modernas y escalables. Busco siempre mejorar y estar al tanto de las últimas tendencias en desarrollo.</p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Habilidades</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/40" alt="HTML5" class="mb-2">
+                    <p class="font-medium">HTML5</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/40" alt="CSS3" class="mb-2">
+                    <p class="font-medium">CSS3</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/40" alt="JavaScript" class="mb-2">
+                    <p class="font-medium">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/40" alt="React" class="mb-2">
+                    <p class="font-medium">React</p>
+                </div>
+                <!-- Agregar más habilidades aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Profesional -->
+    <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Experiencia Profesional</h2>
+            <div class="space-y-4">
+                <div class="flex flex-col items-start bg-white dark:bg-gray-700 p-4 rounded-lg shadow-lg">
+                    <h3 class="font-semibold text-lg">Desarrollador Frontend - Empresa XYZ</h3>
+                    <p class="text-sm text-gray-500">Enero 2020 - Actualidad</p>
+                    <p class="mt-2">Desarrollo de interfaces web usando React y Redux. Creación de soluciones frontend escalables y optimizadas para el rendimiento.</p>
+                </div>
+                <!-- Agregar más experiencias aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl font-medium mb-2">Proyecto 1</h3>
+                    <p class="text-gray-500 mb-4">Descripción breve del proyecto.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Ver proyecto</a>
+                </div>
+                <!-- Agregar más proyectos aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+            <form action="mailto:correo@dominio.com" method="POST" class="max-w-xl mx-auto">
+                <input type="text" placeholder="Nombre" class="w-full mb-4 p-3 border border-gray-300 rounded-md">
+                <input type="email" placeholder="Correo" class="w-full mb-4 p-3 border border-gray-300 rounded-md">
+                <textarea placeholder="Mensaje" class="w-full mb-4 p-3 border border-gray-300 rounded-md"></textarea>
+                <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-md">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="py-8 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Redes Sociales</h2>
+            <div class="space-x-4">
+                <a href="https://www.linkedin.com" class="text-blue-500">LinkedIn</a>
+                <a href="https://github.com" class="text-gray-900">GitHub</a>
+                <a href="https://twitter.com" class="text-blue-400">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Cambio de modo oscuro / claro
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.getElementById('body');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        // Mantener la preferencia de tema
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+        }
+    </script>
+
+</body>
+</html>
